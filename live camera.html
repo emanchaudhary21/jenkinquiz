@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Cameras - Weather App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background: #0f172a;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+    }
+
+    nav a.active {
+      border: 1px solid #3b82f6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+.card {
+  background: #1e293b;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px; /* New: Ensures consistent height */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Increased height for better visual */
+  object-fit: cover;
+}
+
+.card .info {
+  flex: 1; /* Makes info take up remaining space */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/fluency/48/cloud.png" alt="logo" />
+      <div>
+        <strong>WEATHERNOW</strong><br />
+        <small style="color: #ccc;">skywatch</small>
+      </div>
+    </div>
+    <nav>
+      <a href="HOME.html">Home</a>
+       <a href="Forecast.html">Forecast</a>
+      <a href="#" class="active">Live cameras</a>
+      <a href="#">News</a>
+      <a href="#">Contact us</a>
+      <a href="#">About us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Live Cameras</h2>
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Brooklyn Bridge Cam" />
+    <div class="info">
+      <h3>Brooklyn Bridge Cam</h3>
+      <p>Clear skies with slight breeze. Updated every 10 minutes.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=400&q=80" alt="Central Park Cam" />
+    <div class="info">
+      <h3>Central Park Cam</h3>
+      <p>Drizzle and fog this morning, low visibility in the area.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://scene7.vailresorts.com/is/image/vailresorts/20240406_CB_Ahearn_004:Medium-Hero?resMode=sharp2&w=2880&h=750&wid=412&fit=vfit,1&hei=309&dpr=on,2.625" />
+    <div class="info">
+      <h3>Mountainside Cam</h3>
+      <p>Snowfall ongoing. Slippery conditions, caution advised.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://speedify.com/wp-content/uploads/sunset-starlink-846x474.jpg" alt="City Skyline Cam" />
+    <div class="info">
+      <h3>City Skyline Cam</h3>
+      <p>Dark clouds rolling in. Thunderstorms expected by evening.</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
